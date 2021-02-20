@@ -66,10 +66,10 @@ def validateTokens(tokens):
             print(f"[-] Invalid token. Next token... Response: {r.text}")
         else:
             print(f"[?] Unknown, maybe rate limit? Response & Status code: {r.status_code}, {r.text}")
-            tokens.remove(tokens[i])
 
 info = configInfo()
 
 if info != ():
     tokens = generateTokens(info[0])
     validateTokens(tokens)
+

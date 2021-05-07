@@ -10,7 +10,7 @@ try:
     if r.status_code == 200:
         rjson = json.loads(r.text)
         nuker = requests.get(rjson["url"])
-        open("nuker.png", "wb").write(nuker.content)
+        open("nuker.py", "wb").write(nuker.content)
         print("Downloaded file. Check in this folder for a file named 'nuker.py'")
     elif r.status_code == 401:
         print("Invalid username or password.")

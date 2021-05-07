@@ -10,7 +10,7 @@ client = Bot(command_prefix=".", intents = intents)
 # CONFIG
 
 botToken = ""
-spamChannelName = "haha"
+spamChannelName = ""
 serverName = ""
 serverIcon = ""
 spamImage = ""
